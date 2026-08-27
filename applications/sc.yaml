@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespaces
+  name: storage-classes
   namespace: argocd
   # Finalizers enable cascading deletes, meaning deleting the app deletes its managed k8s resources.
   finalizers:
