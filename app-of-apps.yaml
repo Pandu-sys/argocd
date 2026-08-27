@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: root-app
+  namespace: argocd
+  # Finalizers enable cascading deletes, meaning deleting the app deletes its managed k8s resources.
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  # The project the application belongs to. Defaults to 'default'
+  project: default
+
+  # Source defines the Git repository configuration where manifests are stored
+  source:
+    repoURL: 'https://github.com/Pandu-sys/argocd.git'
+    targetRevision: main
+    path: applications
+
+  # Destination defines where the application manifests will be deployed
+  destination:
+    server: 'https://kubernetes.default.svc' # Deploys to the cluster hosting Argo CD
+    namespace: default
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true 
+
