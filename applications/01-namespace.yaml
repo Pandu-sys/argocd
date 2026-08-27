@@ -21,7 +21,7 @@ spec:
     server: 'https://kubernetes.default.svc' # Deploys to the cluster hosting Argo CD
     namespace: default
 
-syncpolicy:
+  syncPolicy:
     automated:
       prune: true
       selfHeal: true 
