@@ -22,7 +22,7 @@ spec:
   # Destination defines where the application manifests will be deployed
   destination:
     server: 'https://kubernetes.default.svc' # Deploys to the cluster hosting Argo CD
-    namespace: roboshop-dev
+    namespace: roboshop
 
   syncPolicy:
     automated:
