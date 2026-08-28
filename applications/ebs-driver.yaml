@@ -16,8 +16,8 @@ spec:
     repoURL: 'https://kubernetes-sigs.github.io/aws-ebs-csi-driver'
     targetRevision: 2.64.0
     helm:
-      values: |
-          name: aws-ebs-csi-driver
+      # values: |
+      #     name: aws-ebs-csi-driver
   # Destination defines where the application manifests will be deployed
   destination:
     server: 'https://kubernetes.default.svc' # Deploys to the cluster hosting Argo CD
