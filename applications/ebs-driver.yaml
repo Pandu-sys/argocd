@@ -16,7 +16,7 @@ spec:
     repoURL: 'https://kubernetes-sigs.github.io/aws-ebs-csi-driver'
     targetRevision: 2.64.0
     helm:
-      releaseName: aws-ebs-csi-driver
+      releaseName: ebs-drivers
       # values: |
       #     name: aws-ebs-csi-driver
   # Destination defines where the application manifests will be deployed
