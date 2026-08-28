@@ -14,6 +14,7 @@ spec:
   source:
     chart: aws-load-balancer-controller
     repoURL: 'https://aws.github.io/eks-charts'
+    targetRevision: 1.16.1 
     helm:
       values: |
         clustername: roboshop-dev
