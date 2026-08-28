@@ -17,9 +17,9 @@ spec:
     targetRevision: 3.5.0
     helm:
       values: |
-        clustername: roboshop-dev
-        regios: us-east-1
-        serviceaccount: 
+        clusterName: roboshop-dev
+        region: us-east-1
+        serviceAccount: 
           create: false
           name: aws-load-balancer-controller
   # Destination defines where the application manifests will be deployed
